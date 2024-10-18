@@ -6,10 +6,36 @@
 body {
    font-size: var(--root-size);
    font-family: system-ui, sans-serif;
+   padding: var(--root-size);
+}
+
+h1 {
+   font-size: calc(var(--root-size) * 2);
+}
+
+.responsive-row {
+   margin-top: var(--root-size);
+   display: flex;
+   flex-direction: column;
+   gap: var(--root-size);
 }
 
 @media (min-width: 600px) {
    :root {
       --root-size: 1.5rem;
+   }
+}
+
+@media (min-width: 800px) {
+   .responsive-row {
+      flex-direction: row;
+   }
+}
+
+
+
+@media print {
+   :root {
+      --root-size: 1rem;
    }
 }
