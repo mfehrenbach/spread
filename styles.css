@@ -1,41 +1,41 @@
 :root {
-   --root-size: 1.2rem;
-   --fg-color: #000;
+	--root-size: 1.2rem;
+	--fg-color: #000;
 }
 
 body {
-   font-size: var(--root-size);
-   font-family: system-ui, sans-serif;
-   padding: var(--root-size);
+	font-size: var(--root-size);
+	font-family: system-ui, sans-serif;
+	padding: var(--root-size);
 }
 
 h1 {
-   font-size: calc(var(--root-size) * 2);
+	font-size: calc(var(--root-size) * 2);
 }
 
 .responsive-row {
-   margin-top: var(--root-size);
-   display: flex;
-   flex-direction: column;
-   gap: var(--root-size);
+	margin-top: var(--root-size);
+	display: flex;
+	flex-direction: column;
+	gap: var(--root-size);
 }
 
 @media (min-width: 600px) {
-   :root {
-      --root-size: 1.5rem;
-   }
+	:root {
+		--root-size: 1.5rem;
+	}
 }
 
 @media (min-width: 800px) {
-   .responsive-row {
-      flex-direction: row;
-   }
+	.responsive-row {
+		flex-direction: row;
+	}
 }
 
 
 
 @media print {
-   :root {
-      --root-size: 1rem;
-   }
+	:root {
+		--root-size: 1rem;
+	}
 }
